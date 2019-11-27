@@ -1,0 +1,22 @@
+{
+    "en": [{
+        "version": "4.2.2.4",
+        "date": "2019-08-23",
+        "model": "Basic Settings",
+        "code": "base",
+        "metto": [
+            "Solve the problem of user details gender display as digital",
+            "Fixed the problem of modifying the page style during the semester of the school year."
+        ]
+    }],
+    "zh-CN": [{
+        "version": "4.2.2.4",
+        "date": "2019-08-23",
+        "model": "基础设置",
+        "code": "base",
+        "metto": [
+            "解决了用户详情性别显示为数字问题",
+            "修复了学年学期修改页面样式问题"
+        ]
+    }]
+}

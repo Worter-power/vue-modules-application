@@ -1,0 +1,161 @@
+$header-height: 60px;
+$logo-width: 40px;
+$logo-height: 40px;
+.el-page-header{
+    height: $header-height;
+    box-sizing: border-box;
+    position: relative;
+    .el-page-header-left{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: $header-height;
+        width: 250px;
+        padding: 0 10px 0 20px;
+        box-sizing: border-box;
+        cursor: pointer;
+        img{
+            box-sizing: border-box;
+            height: $logo-height;
+            width: $logo-width;
+            box-shadow: $--box-shadow-dark;
+            border-radius: 50%;
+            overflow: hidden;
+            float: left;
+            vertical-align: middle;
+            margin-top: ($header-height - $logo-height)/2;
+        }
+        p{
+            margin-left: $logo-width + 10px;
+            line-height: $header-height;
+            font-size: $--font-size-max-large;
+            font-weight: 600;
+            color: $--color-white;
+            letter-spacing: 6px;
+            text-shadow: $--text-shadow-base;
+            white-space: nowrap;
+        }
+    }
+    .el-page-header-right{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: $header-height;
+        min-width: 250px;
+        padding: 0 20px 0 0;
+        box-sizing: border-box;
+        text-align: right;
+        .el-page-header-right-row{
+            height: $header-height/2;
+            box-sizing: border-box;
+            white-space: nowrap;
+            &:first-child{
+                padding-top: 3px;
+            }
+            >span{
+                cursor: pointer;
+                vertical-align: middle;
+                color: $--color-white;
+                padding: 0 0 0 5px;
+                &.fa{
+                    font-size: 16px;
+                    &:hover{
+                        opacity: .8;
+                    }
+                }
+            }
+            svg{
+                cursor: pointer;
+                vertical-align: middle;
+                &:hover{
+                    opacity: .8;
+                }
+            }
+            .el-header-lang{
+                >span{
+                    vertical-align: middle;
+                    display: inline-block;
+                    color: $--color-white;
+                    cursor: pointer;
+                }
+                svg{
+                    vertical-align: middle;
+                    display: inline-block;
+                }
+                height: $header-height/2;
+                position: relative;
+                z-index: 1;
+                    transition: all .3s ease-in;
+                ul{
+                    display: none;
+                    position: absolute;
+                    right: 0;
+                    top: 27px;
+                    width: 120px;
+                    color: $--color-text-primary;
+                    background-color: $--color-white;
+                    border-radius: $--border-radius-base;
+                    box-shadow: $--box-shadow-dark;
+                    text-align: left;
+                    li{
+                        padding: 0 10px;
+                        line-height: 40px;
+                        cursor: pointer;
+                        &:hover:not(.sanjiao_up),
+                        &.select{
+                            border-radius: $--border-radius-base;
+                            background-color: $--border-color-light;
+                        }
+                        &.sanjiao_up{
+                            position: absolute;
+                            top: -16px;
+                            right: 30px;
+                            width: 0;
+                            height: 0;
+                            padding: 0;
+                            margin: 0;
+                            overflow: hidden;
+                            font-size: 0;     /*是因为, 虽然宽高度为0, 但在IE6下会具有默认的 */
+                            line-height: 0;  /* 字体大小和行高, 导致盒子呈现被撑开的长矩形 */
+                            border-width: 8px;
+                            border-style: solid;/*IE6下, 设置余下三条边的border-style为dashed,即可达到透明的效果*/
+                            border-color: transparent transparent $--color-white transparent;
+                        }
+                    }
+                }
+                &:hover{
+                    ul{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .el-page-header-center{
+        height: $header-height;
+        box-sizing: border-box;
+        margin: 0 250px;
+    }
+}
+
+.slide-down-enter{
+    opacity: 0;
+}
+
+.slide-down-leave-active {
+    opacity: 1;
+}
+
+$footer-height: 37px;
+.page-footer{
+    height: $footer-height;
+    line-height: $footer-height;
+    text-align: center;
+    color: $--color-white;
+    background-color: $--color-primary;
+    a{
+        color: $--color-white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}

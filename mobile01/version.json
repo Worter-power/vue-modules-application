@@ -1,0 +1,21 @@
+{
+    "en": [{
+        "version": "4.2.2.2",
+        "date": "2019-11-12",
+        "model": "Qn/vote",
+        "code": "qn",
+        "metto": [
+            "New mobile page"
+        ]
+    }],
+    "zh-CN": [{
+        "version": "4.2.2.2",
+        "date": "2019-11-12",
+        "model": "问卷投票",
+        "code": "qn",
+        "metto": [
+            "新增移动端页面",
+            "优化部分体验功能"
+        ]
+    }]
+}

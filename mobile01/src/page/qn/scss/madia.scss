@@ -1,0 +1,74 @@
+
+
+@media screen and (max-width: 768px) {
+    .sy-dialog{
+        width: 80% !important;
+    }
+    #app{
+        width: 100%!important;
+        min-width: auto!important;
+        .sy-qn-details-btns{
+            right: 0;
+            left: 0;
+            bottom: 0;
+            width: auto;
+            z-index: 1;
+            >.back{
+                display: none;
+            }
+        }
+        .sy-qn-details-pages{
+            bottom: 46px;
+        }
+        .qn-creat-question{
+            padding-bottom: 46px;
+        }
+        .qn-title-img{
+            width: 100%!important;
+        }
+        .qn-title-imgcard{
+            height: auto!important;
+            width: 100%!important;
+        }
+        .sy-qn-details-header{
+            >ul{
+                >li{
+                    &.title{
+                        font-size: 20px;
+                        line-height: 50px;
+                        padding: 10px 15px;
+                        font-weight: 500;
+                    }
+                }
+        
+            }
+        }
+        .qn-title-view-box{
+            overflow: auto;
+        }
+        .qn-details-views{
+            display: none;
+        }
+        .sy-qn-details-header,
+        .sy-qn-details-body,
+        .el-grader>div,
+        .el-grader{
+            position: static;
+            overflow: hidden;
+        }
+        .el-grader .el-grader-footer{
+            border-color: transparent!important;
+        }
+        .sy-qn-details-header{
+            height: auto;
+            ul{
+                li{
+                    >span{
+                        display: block;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+.qn-report{
+    $mw: 20px;
+    .qn-report-container{
+        position: absolute;
+        top: $mw;
+        bottom: $mw;
+        right: $mw;
+        left: $mw;
+        background-color: #fff;
+        box-shadow: $--box-shadow-base;
+        border-radius: 5px;
+        overflow: auto;
+    }
+    .qn_statc_header{
+        border-bottom: 2px solid #3C5617;
+        position: relative;
+        min-height: 66px;
+        >h3{
+            line-height: 36px;
+            margin: 0;
+            font-size: 25px;
+            color: $--color-text-regular;
+            font-weight: 500;
+            padding: 15px 0;
+            text-align: center;
+            padding: 0 10px;
+            position: relative;
+            height: 36px;
+            .el-button--text{
+                position: absolute;
+                right: 10px;
+                top: 6px;
+            }
+        }
+        p{
+            line-height: 36px;
+            padding: 0 10px;
+            text-align: right;
+        }
+        .qn-ctr{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            z-index: 10;
+        }
+    }
+    .qn_statc_body{
+        padding: 15px 25px;
+        position: absolute;
+        top: 74px;
+        left: 0;
+        right: 0;
+        overflow: auto;
+        .qn-question-title{
+            padding-bottom: 15px;
+            font-size: 14px;
+        }
+        li{
+            padding-bottom: 15px;
+        }
+        .qn_statc_body-items{
+            display: inline-block;
+            text-align: center;
+            p{
+                width: 120px;
+                box-sizing: border-box;
+                padding: 0 10px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+    .remarks_pop{
+        max-height: 500px;
+        max-width: 600px;
+        overflow: auto;
+        padding: 5px;
+    }
+    .qn-charts{
+        height: 400px;
+        background-color: rgba(242,242,242,1);
+    }
+}

@@ -1,0 +1,71 @@
+[
+    {
+        "path": "qn/Mobile.vue",
+        "name": "qn-mobile",
+        "fileName": "",
+        "children": [
+            {
+                "path": "qn/mobileView/home.vue",
+                "name": "home",
+                "fileName": "", 
+                "describe": "问卷首页",
+                "children": [
+                    {
+                        "path": "qn/mobileView/home/list.vue",
+                        "name": "list",
+                        "fileName": "", 
+                        "describe": "问卷列表"
+                    },
+                    {
+                        "path": "qn/mobileView/home/desc.vue",
+                        "name": "desc",
+                        "fileName": "", 
+                        "describe": "问卷说明"
+                    },
+                    {
+                        "path": "qn/mobileView/home/main.vue",
+                        "name": "main",
+                        "fileName": "", 
+                        "describe": "问卷详情"
+                    },
+                    {
+                        "path": "qn/mobileView/home/details.vue",
+                        "name": "details",
+                        "fileName": "", 
+                        "describe": "问卷结果"
+                    },
+                    {
+                        "path": "qn/components/about.vue",
+                        "name": "about",
+                        "fileName": "", 
+                        "describe": "关于页面"
+                    },
+                    {
+                        "path": "qn/components/abouts.vue",
+                        "name": "abouts",
+                        "fileName": "", 
+                        "describe": "关于历史页面"
+                    },
+                    {
+                        "path": "/",
+                        "redirect": "/qn-mobile/home/list"
+                    }
+                ]
+            },
+            {
+                "path": "qn/mobileView/home/main.vue",
+                "name": "main",
+                "fileName": "", 
+                "describe": "问卷详情"
+            },
+            {
+                "path": "/",
+                "redirect": "/qn-mobile/home"
+            }
+        ]
+    },
+    {
+        "path": "/",
+        "redirect": "/qn-mobile"
+    }
+]

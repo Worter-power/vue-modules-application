@@ -1,0 +1,151 @@
+[
+    {
+        "path": "qn/Index.vue",
+        "name": "qn",
+        "fileName": "",
+        "children": [
+            {
+                "path": "qn/view/index.vue",
+                "name": "home",
+                "fileName": "",
+                "describe": "问卷前台首页",
+                "children": [
+                    {
+                        "path": "qn/view/home/pre.vue",
+                        "name": "pre",
+                        "fileName": "",
+                        "describe": "问卷首页引导"
+                    },
+                    {
+                        "path": "qn/view/home/list.vue",
+                        "name": "list",
+                        "fileName": "",
+                        "describe": "问卷首页列表页面"
+                    },
+                    {
+                        "path": "/",
+                        "redirect": "/qn/home/pre"
+                    }
+                ]
+            },
+            {
+                "path": "qn/view/index.vue",
+                "name": "manager",
+                "fileName": "",
+                "describe": "问卷管理",
+                "children": [
+                    {
+                        "path": "qn/view/manger/pages.vue",
+                        "name": "pages",
+                        "fileName": "",
+                        "describe": "问卷管理",
+                        "children": [
+                            {
+                                "path": "",
+                                "name": "hello",
+                                "fileName": "",
+                                "component": "hello",
+                                "describe": "欢迎页面"
+                            },
+                            {
+                                "path": "qn/view/manger/home/index.vue",
+                                "name": "home",
+                                "fileName": "",
+                                "describe": "问卷调查管理页面"
+                            },
+                            {
+                                "path": "qn/view/manger/home/index.vue",
+                                "name": "tp",
+                                "fileName": "",
+                                "describe": "投票管理页面"
+                            },
+                            {
+                                "path": "qn/view/manger/setting/ip.vue",
+                                "name": "ip",
+                                "fileName": "",
+                                "describe": "IP段管理"
+                            },
+                            {
+                                "path": "",
+                                "name": "auth",
+                                "fileName": "",
+                                "component": "auth",
+                                "codes": "qn",
+                                "describe":""
+                            },
+                            {
+                                "path": "",
+                                "name": "log",
+                                "fileName": "",
+                                "component": "log",
+                                "codes": "qn",
+                                "describe":""
+                            },
+                            {
+                                "path": "",
+                                "name": "viewport",
+                                "fileName": "",
+                                "component": "viewport",
+                                "codes": "qn",
+                                "describe":""
+                            },
+                            {
+                                "path": "/",
+                                "redirect": "/qn/manager/pages/hello"
+                            }
+                        ]
+                    },
+                    {
+                        "path": "qn/view/manger/add/index.vue",
+                        "name": "add",
+                        "fileName": "",
+                        "describe": "新增问卷"
+                    },
+                    {
+                        "path": "qn/view/manger/add/preview.vue",
+                        "name": "preview",
+                        "fileName": "",
+                        "describe": "预览问卷"
+                    },
+                    {
+                        "path": "qn/view/manger/creat/index.vue",
+                        "name": "addqn",
+                        "fileName": "",
+                        "describe": "创建问卷"
+                    },
+                    {
+                        "path": "qn/view/report/index.vue",
+                        "name": "bb",
+                        "fileName": "",
+                        "describe": "统计报表"
+                    },
+
+                    {
+                        "path": "/",
+                        "redirect": "/qn/manager/pages"
+                    }
+                ]
+            },
+            {
+                "path": "qn/view/dowork/index.vue",
+                "name": "wj",
+                "fileName": "", 
+                "describe": "问卷你提交页面"
+            },
+            {
+                "path": "qn/view/details/titleView.vue",
+                "name": "detail",
+                "fileName": "", 
+                "describe": "问卷你提交页面"
+            },
+            {
+                "path": "/",
+                "redirect": "/qn/home"
+            }
+        ]
+    },
+    {
+        "path": "/",
+        "redirect": "/qn"
+    }
+]
